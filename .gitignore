@@ -1,3 +1,5 @@
 node_modules
 .DS_Store
 .idea
+monitoring.log
+data.sqlite3.sqbpro
