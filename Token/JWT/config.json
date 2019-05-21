@@ -1,0 +1,9 @@
+{
+  "private_key_file": "./private.key",
+  "header_alg": "PS256",
+  "header_kid": "6ZgoBU3NehVvMnB9szyshuCJQT8",
+  "header_type": "JWT",
+  "payload_sub": "S6HksZfPrMNPMTh6VrhcopfXoLQa",
+  "payload_aud": "https://tppopenbanking.cumberland.co.uk/token",
+  "payload_iss": "S6HksZfPrMNPMTh6VrhcopfXoLQa"
+}

@@ -1,0 +1,12 @@
+{
+  "url_token_server": "https://tppopenbanking.cumberland.co.uk/token",
+  "hostname": "tppopenbanking.cumberland.co.uk",
+  "financial_id": "001580000103U9kAAE",
+  "client_id": "S6HksZfPrMNPMTh6VrhcopfXoLQa",
+  "redirect_uri": "https://example.org",
+  "scope": "openid accounts",
+  "client_assertion_type": "urn:ietf:params:oauth:client-assertion-type:jwt-bearer",
+  "grant_type": "authorization_code",
+  "user_name": "999999999998",
+  "user_password": "Passw0rd"
+}

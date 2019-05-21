@@ -1,0 +1,11 @@
+{
+  "log_file_path": "./monitoring_OBA.log",
+  "email_from_address": "fincon@harlequincdis.com",
+  "email_to_address": ["headit74@outlook.com","nick@harlequincdis.com"],
+  "email_from_name": "OBA Reporter",
+  "email_to_name": "Nick",
+  "email_subject": "About the result of OBA",
+  "smtp_server_hostname": "api.sendgrid.com",
+  "smtp_server_path": "/v3/mail/send",
+  "smtp_server_apikey": "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"
+}

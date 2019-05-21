@@ -1,0 +1,219 @@
+04:00:25.259 INFO  FirstAccessToken: 
+	bd151248-732b-3683-bc03-a9e20c98c2a9 
+04:00:27.844 INFO  ConsentID: 
+	3a9beb8c-46c1-47b3-acdb-16e111efa9f5 
+04:00:27.848 INFO  Authorize Endpoint URL Result: 
+	https://openbanking.cumberland.co.uk/oauth2/authorize?response_type=code%20id_token&client_id=S6HksZfPrMNPMTh6VrhcopfXoLQa&scope=openid%20accounts&redirect_uri=https://example.org&request=eyJhbGciOiJQUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjZaZ29CVTNOZWhWdk1uQjlzenlzaHVDSlFUOCJ9.eyJtYXhfYWdlIjo4NjQwMCwic2NvcGUiOiJvcGVuaWQgYWNjb3VudHMiLCJjbGFpbXMiOnsiaWRfdG9rZW4iOnsiYWNyIjp7InZhbHVlcyI6WyJ1cm46b3BlbmJhbmtpbmc6cHNkMjpzY2EiLCJ1cm46b3BlbmJhbmtpbmc6cHNkMjpjYSJdLCJlc3NlbnRpYWwiOnRydWV9LCJvcGVuYmFua2luZ19pbnRlbnRfaWQiOnsidmFsdWUiOiIzYTliZWI4Yy00NmMxLTQ3YjMtYWNkYi0xNmUxMTFlZmE5ZjUiLCJlc3NlbnRpYWwiOnRydWV9fSwidXNlcmluZm8iOnsib3BlbmJhbmtpbmdfaW50ZW50X2lkIjp7InZhbHVlIjoiM2E5YmViOGMtNDZjMS00N2IzLWFjZGItMTZlMTExZWZhOWY1IiwiZXNzZW50aWFsIjp0cnVlfX19LCJyZXNwb25zZV90eXBlIjoiY29kZSBpZF90b2tlbiIsInJlZGlyZWN0X3VyaSI6Imh0dHBzOi8vZXhhbXBsZS5vcmciLCJub25jZSI6IjEyMyIsImNsaWVudF9pZCI6IlM2SGtzWmZQck1OUE1UaDZWcmhjb3BmWG9MUWEiLCJpYXQiOjE1NTgzODI0MjcsImV4cCI6MTU1ODM4NjAyNywiYXVkIjoiaHR0cHM6Ly90cHBvcGVuYmFua2luZy5jdW1iZXJsYW5kLmNvLnVrL3Rva2VuIiwiaXNzIjoiUzZIa3NaZlByTU5QTVRoNlZyaGNvcGZYb0xRYSJ9.eWsKBqkhCSu_uXNZbWI5_xMxpHySQniKW5GYwlckpKDV-ZlwDBmNspUd81m9vSg-iqWj8IiXVUrJtwE37gHNRnptk00MncfrheVsuuErTgo2ge_t9iAhx02BDJUG8Cs7nglLTR-188K14WKAYSlc51v2c1eyC6haSZfFGo70QC1nTneK271hGQIXIaQHLIsul-eozyKFN_kHMoyobmPO4l94d5_aYJ_2TJtig2_O81r1oMQ_-vctuG847jHZ1WGbBigVFfmDJPeT5EgrKs7UbN0s9UsLD80UuuRb1nHK-b2ytM_88uCiTkC4vpynrweTuWbzoI9CnGl21bR-h2Gp0w
+ 
+2019-05-21 04:06:06 INFO  [GET_FIRST_ACCESS_TOKEN]: 70c7773d-bf26-3a09-a068-d068407347b7 
+2019-05-21 04:06:08 INFO  [GET_ACCOUNT_CODE]: 106825d4-aa44-4ccf-9699-30e1cadc3b4a 
+2019-05-21 04:06:08 INFO  [AUTHORIZATION_ENDPOINT]: https://openbanking.cumberland.co.uk/oauth2/authorize?response_type=code%20id_token&client_id=S6HksZfPrMNPMTh6VrhcopfXoLQa&scope=openid%20accounts&redirect_uri=https://example.org&request=eyJhbGciOiJQUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjZaZ29CVTNOZWhWdk1uQjlzenlzaHVDSlFUOCJ9.eyJtYXhfYWdlIjo4NjQwMCwic2NvcGUiOiJvcGVuaWQgYWNjb3VudHMiLCJjbGFpbXMiOnsiaWRfdG9rZW4iOnsiYWNyIjp7InZhbHVlcyI6WyJ1cm46b3BlbmJhbmtpbmc6cHNkMjpzY2EiLCJ1cm46b3BlbmJhbmtpbmc6cHNkMjpjYSJdLCJlc3NlbnRpYWwiOnRydWV9LCJvcGVuYmFua2luZ19pbnRlbnRfaWQiOnsidmFsdWUiOiIxMDY4MjVkNC1hYTQ0LTRjY2YtOTY5OS0zMGUxY2FkYzNiNGEiLCJlc3NlbnRpYWwiOnRydWV9fSwidXNlcmluZm8iOnsib3BlbmJhbmtpbmdfaW50ZW50X2lkIjp7InZhbHVlIjoiMTA2ODI1ZDQtYWE0NC00Y2NmLTk2OTktMzBlMWNhZGMzYjRhIiwiZXNzZW50aWFsIjp0cnVlfX19LCJyZXNwb25zZV90eXBlIjoiY29kZSBpZF90b2tlbiIsInJlZGlyZWN0X3VyaSI6Imh0dHBzOi8vZXhhbXBsZS5vcmciLCJub25jZSI6IjEyMyIsImNsaWVudF9pZCI6IlM2SGtzWmZQck1OUE1UaDZWcmhjb3BmWG9MUWEiLCJpYXQiOjE1NTgzODI3NjgsImV4cCI6MTU1ODM4NjM2OCwiYXVkIjoiaHR0cHM6Ly90cHBvcGVuYmFua2luZy5jdW1iZXJsYW5kLmNvLnVrL3Rva2VuIiwiaXNzIjoiUzZIa3NaZlByTU5QTVRoNlZyaGNvcGZYb0xRYSJ9.Zb338OajFm0AKrqGtFmqtS81_n-iJ3RMj0pO3_BdcAbryrpxbZoyH1wT4JQpo91j_Cskhdrb68Rq3MLNhXHkipGD_7uorqZjNeCzvy9hctbhmGt7UCC65aTVeVDejopA3YD1xJmjZBgiYgphNV4W9ELATKrdhFoUTcYdxxmyWGxo9aoIgHMluukAfAlPpAk5HqeQmkCqmEUQhxmUkUouhFYKcSpNHwkBO2M4B37LWn5xFx6TtVjdk2tIOcQQsP7TDzKc06ge-FScugYbELMAtWWzl3sSyvZHW5kMLc9ctw2yqpXzzJWqI1o8dF20uxUUZ6LgZsgnZArz4CxriI3CuA
+ 
+2019-05-21 04:25:58 INFO  _____________MONITORING_START____________ 
+2019-05-21 04:26:29 INFO  [GET_ACCESS_CODE]: 5767b57b-d003-3cc1-8114-4cb9de4e1d49 
+2019-05-21 04:26:33 INFO  [GET_ACCESS_CODE]: 689723f1-a317-3a7b-8f1d-9d801e77b690 
+2019-05-21 04:30:31 INFO  _____________MONITORING_START____________ 
+2019-05-21 04:30:50 INFO  [GET_ACCESS_CODE]: e775ed26-7e65-32af-aa38-0309fa6a7c2b 
+2019-05-21 04:30:53 INFO  [GET_ACCESS_CODE]: 2fcc37b9-1597-37ee-a1db-db9d975d3f3b 
+2019-05-21 04:33:28 INFO  _____________MONITORING_START____________ 
+2019-05-21 04:33:48 INFO  [GET_ACCESS_CODE]: 01133d94-25c0-355f-a55b-4b5b47b7d602 
+2019-05-21 04:33:51 INFO  [GET_ACCESS_TOKEN]: 74b7e7d2-9afc-3214-8640-b2f592c341a4 
+2019-05-21 04:34:26 INFO  _____________MONITORING_START____________ 
+2019-05-21 04:34:44 INFO  [GET_ACCESS_CODE]: ab96230c-0d38-335c-b22b-1bc378625c5a 
+2019-05-21 04:34:48 INFO  [GET_ACCESS_TOKEN]: 263f6680-de1f-3150-9fd9-370139105c75 
+2019-05-21 04:43:45 INFO  _____________MONITORING_START____________ 
+2019-05-21 04:43:45 INFO  ________________CYCLE_START_______________ 
+2019-05-21 04:44:05 INFO  [GET_ACCESS_CODE]: 5893e3a9-b9da-37a0-b077-cf0eb1b37444 
+2019-05-21 04:44:09 INFO  [GET_ACCESS_TOKEN]: f33c5e86-a28d-3d3d-825d-5482543f3aa4 
+2019-05-21 04:44:12 ERROR STEP: GET_ACCOUNT[0]_INFO: 
+	account is not defined 
+2019-05-21 04:44:17 INFO  GET_ACCOUNT[0]_INFO 
+2019-05-21 04:44:17 INFO  ________________CYCLE_START_______________ 
+2019-05-21 04:44:35 INFO  [GET_ACCESS_CODE]: 15a34d2f-14b3-341a-992a-c654015c5477 
+2019-05-21 04:44:38 INFO  [GET_ACCESS_TOKEN]: 92f950b8-585c-38fd-a78a-f5bec62fd18e 
+2019-05-21 04:44:40 ERROR STEP: GET_ACCOUNT[0]_INFO: 
+	account is not defined 
+2019-05-21 04:44:45 INFO  GET_ACCOUNT[0]_INFO 
+2019-05-21 04:44:45 INFO  ________________CYCLE_START_______________ 
+2019-05-21 04:47:20 INFO  _____________MONITORING_START____________ 
+2019-05-21 04:47:20 INFO  ________________CYCLE_START_______________ 
+2019-05-21 04:47:39 INFO  [GET_ACCESS_CODE]: 335503c4-f77f-3785-a97f-74036ba3e4ad 
+2019-05-21 04:47:42 INFO  [GET_ACCESS_TOKEN]: 2dcef4b2-732b-3f99-a39f-e492a9e69e1a 
+2019-05-21 04:47:45 ERROR STEP: GET_ACCOUNT[0]_INFO: 
+	account is not defined 
+2019-05-21 04:47:50 INFO  GET_ACCOUNT[0]_INFO 
+2019-05-21 04:47:50 INFO  ________________CYCLE_START_______________ 
+2019-05-21 04:48:08 INFO  [GET_ACCESS_CODE]: 8d4f44f2-b36f-3613-8a93-0b290dbd2a0d 
+2019-05-21 04:48:11 INFO  [GET_ACCESS_TOKEN]: ab2aa933-429f-3f25-9178-75ad0f1e82f6 
+2019-05-21 04:48:13 ERROR STEP: GET_ACCOUNT[0]_INFO: 
+	account is not defined 
+2019-05-21 04:48:18 INFO  GET_ACCOUNT[0]_INFO 
+2019-05-21 04:48:18 INFO  ________________CYCLE_START_______________ 
+2019-05-21 04:48:36 INFO  [GET_ACCESS_CODE]: 362f6df7-8d1a-38a0-8664-8fd42667e9bb 
+2019-05-21 04:48:39 INFO  [GET_ACCESS_TOKEN]: c7fe9eeb-f64f-31ee-95df-57ad5dac2c3e 
+2019-05-21 04:48:42 ERROR STEP: GET_ACCOUNT[0]_INFO: 
+	account is not defined 
+2019-05-21 04:48:47 INFO  GET_ACCOUNT[0]_INFO 
+2019-05-21 04:48:47 INFO  ________________CYCLE_START_______________ 
+2019-05-21 04:49:06 INFO  [GET_ACCESS_CODE]: b5835a24-d28e-332e-a106-96eaef0e7af6 
+2019-05-21 04:49:09 INFO  [GET_ACCESS_TOKEN]: f0211146-e58e-3b62-9fa9-98ded4f42768 
+2019-05-21 04:49:11 ERROR STEP: GET_ACCOUNT[0]_INFO: 
+	account is not defined 
+2019-05-21 04:49:16 INFO  GET_ACCOUNT[0]_INFO 
+2019-05-21 04:49:16 INFO  ________________CYCLE_START_______________ 
+2019-05-21 04:49:36 INFO  _____________MONITORING_START____________ 
+2019-05-21 04:49:36 INFO  ________________CYCLE_START_______________ 
+2019-05-21 04:49:54 INFO  [GET_ACCESS_CODE]: 35b9b4da-f495-3ef1-841f-fd191c4b8bc7 
+2019-05-21 04:49:57 INFO  [GET_ACCESS_TOKEN]: dce10718-8b86-33fc-9079-0719cb9e19df 
+2019-05-21 04:50:00 ERROR STEP: GET_ACCOUNT[0]_INFO: 
+	account is not defined 
+2019-05-21 04:50:05 INFO  GET_ACCOUNT[0]_INFO 
+2019-05-21 04:50:05 INFO  ________________CYCLE_START_______________ 
+2019-05-21 04:50:23 INFO  [GET_ACCESS_CODE]: 5a0e5d14-2475-318d-912a-8d78c8cad8f7 
+2019-05-21 04:50:25 INFO  [GET_ACCESS_TOKEN]: cf7fd58c-e516-32de-a08b-3bb104439fb8 
+2019-05-21 04:50:28 ERROR STEP: GET_ACCOUNT[0]_INFO: 
+	account is not defined 
+2019-05-21 04:50:33 INFO  GET_ACCOUNT[0]_INFO 
+2019-05-21 04:50:33 INFO  ________________CYCLE_START_______________ 
+2019-05-21 04:50:52 INFO  [GET_ACCESS_CODE]: 6f8a3c63-c979-3121-85e9-e8a05eeca103 
+2019-05-21 04:50:54 INFO  [GET_ACCESS_TOKEN]: fdcdca36-c566-31f0-8a60-7b8cb63f4c63 
+2019-05-21 04:54:08 INFO  _____________MONITORING_START____________ 
+2019-05-21 04:54:08 INFO  ________________CYCLE_START_______________ 
+2019-05-21 04:54:27 INFO  [GET_ACCESS_CODE]: c1bd3932-51a0-363c-9be1-029388ab1ea3 
+2019-05-21 04:54:31 INFO  [GET_ACCESS_TOKEN]: f192f242-a24c-3e46-8c34-a141a3a4013e 
+2019-05-21 04:54:34 ERROR STEP: GET_ACCOUNT[0]_INFO: 
+	account is not defined 
+2019-05-21 04:54:39 INFO  GET_ACCOUNT[0]_INFO 
+2019-05-21 04:54:39 INFO  ________________CYCLE_START_______________ 
+2019-05-21 04:54:57 INFO  [GET_ACCESS_CODE]: 17999f95-1c59-3347-8b2e-60b2a1e6fb4a 
+2019-05-21 04:55:00 INFO  [GET_ACCESS_TOKEN]: 40a3b640-7663-3d24-8f86-2ceb35055148 
+2019-05-21 04:55:03 ERROR STEP: GET_ACCOUNT[0]_INFO: 
+	account is not defined 
+2019-05-21 04:55:08 INFO  GET_ACCOUNT[0]_INFO 
+2019-05-21 04:55:08 INFO  ________________CYCLE_START_______________ 
+2019-05-21 04:55:26 INFO  [GET_ACCESS_CODE]: 2e69d9aa-296d-3f96-93b2-60b717914a65 
+2019-05-21 04:55:28 INFO  [GET_ACCESS_TOKEN]: d9929eb5-0296-34da-8cf3-8a39320719d1 
+2019-05-21 04:55:31 ERROR STEP: GET_ACCOUNT[0]_INFO: 
+	account is not defined 
+2019-05-21 04:55:36 INFO  GET_ACCOUNT[0]_INFO 
+2019-05-21 04:55:36 INFO  ________________CYCLE_START_______________ 
+2019-05-21 05:01:26 INFO  _____________MONITORING_START____________ 
+2019-05-21 05:01:26 INFO  ________________CYCLE_START_______________ 
+2019-05-21 05:01:46 INFO  [GET_ACCESS_CODE]: e5b79ac1-41b1-3517-b15c-72f03b24569a 
+2019-05-21 05:01:50 INFO  [GET_ACCESS_TOKEN]: b62073e0-7fa9-33de-8f49-879db6c6ac55 
+2019-05-21 05:01:53 ERROR STEP: GET_ACCOUNT[0]_INFO: 
+	account is not defined
+
+Previous Response: {"Data":{"Account":[{"AccountId":"_uHhMROQPty6S284ksR_lg","Currency":"GBP","AccountType":"Personal","AccountSubType":"CurrentAccount","Description":"Current Account","Nickname":"My Current Account","Account":[{"SchemeName":"UK.OBIE.SortCodeAccountNumber","Identification":"03090103498000"}]},{"AccountId":"FfcVacReo4JeilKxgWKdoA","Currency":"GBP","AccountType":"Business","AccountSubType":"CurrentAccount","Description":"Current Account","Nickname":"Business Current Account","Account":[{"SchemeName":"UK.OBIE.SortCodeAccountNumber","Identification":"03090303498002"}]}]},"Links":{"Self":"https://tppopenbanking.cumberland.co.uk/open-banking/v3.1/aisp/accounts"}} 
+2019-05-21 05:01:58 INFO  GET_ACCOUNT[0]_INFO 
+2019-05-21 05:01:58 INFO  ________________CYCLE_START_______________ 
+2019-05-21 05:02:17 INFO  [GET_ACCESS_CODE]: ba81f739-5f8f-3c0b-af23-6e4b3c26f5d7 
+2019-05-21 05:03:19 INFO  _____________MONITORING_START____________ 
+2019-05-21 05:03:19 INFO  ________________CYCLE_START_______________ 
+2019-05-21 05:03:38 INFO  [GET_ACCESS_CODE]: d4b89581-bfcd-3824-b8ee-63f4f70352a9 
+2019-05-21 05:03:41 INFO  [GET_ACCESS_TOKEN]: acf08875-56de-395e-826a-bd4854e7db5e 
+2019-05-21 05:03:43 ERROR STEP: GET_ACCOUNT[0]_INFO: 
+	account is not defined
+
+Previous Response: {"Data":{"Account":[{"AccountId":"_uHhMROQPty6S284ksR_lg","Currency":"GBP","AccountType":"Personal","AccountSubType":"CurrentAccount","Description":"Current Account","Nickname":"My Current Account","Account":[{"SchemeName":"UK.OBIE.SortCodeAccountNumber","Identification":"03090103498000"}]},{"AccountId":"FfcVacReo4JeilKxgWKdoA","Currency":"GBP","AccountType":"Business","AccountSubType":"CurrentAccount","Description":"Current Account","Nickname":"Business Current Account","Account":[{"SchemeName":"UK.OBIE.SortCodeAccountNumber","Identification":"03090303498002"}]}]},"Links":{"Self":"https://tppopenbanking.cumberland.co.uk/open-banking/v3.1/aisp/accounts"}} 
+2019-05-21 05:06:50 INFO  _____________MONITORING_START____________ 
+2019-05-21 05:06:50 INFO  ________________CYCLE_START_______________ 
+2019-05-21 05:06:56 ERROR STEP: GET_ACCESS_CODE: 
+	Cannot read property 'focus' of null
+
+Previous Response: https://openbanking.cumberland.co.uk/oauth2/authorize?response_type=code%20id_token&client_id=S6HksZfPrMNPMTh6VrhcopfXoLQa&scope=openid%20accounts&redirect_uri=https://example.org&request=eyJhbGciOiJQUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjZaZ29CVTNOZWhWdk1uQjlzenlzaHVDSlFUOCJ9.eyJtYXhfYWdlIjo4NjQwMCwic2NvcGUiOiJvcGVuaWQgYWNjb3VudHMiLCJjbGFpbXMiOnsiaWRfdG9rZW4iOnsiYWNyIjp7InZhbHVlcyI6WyJ1cm46b3BlbmJhbmtpbmc6cHNkMjpzY2EiLCJ1cm46b3BlbmJhbmtpbmc6cHNkMjpjYSJdLCJlc3NlbnRpYWwiOnRydWV9LCJvcGVuYmFua2luZ19pbnRlbnRfaWQiOnsidmFsdWUiOiIxMDY4MjVkNC1hYTQ0LTRjY2YtOTY5OS0zMGUxY2FkYzNiNGEiLCJlc3NlbnRpYWwiOnRydWV9fSwidXNlcmluZm8iOnsib3BlbmJhbmtpbmdfaW50ZW50X2lkIjp7InZhbHVlIjoiMTA2ODI1ZDQtYWE0NC00Y2NmLTk2OTktMzBlMWNhZGMzYjRhIiwiZXNzZW50aWFsIjp0cnVlfX19LCJyZXNwb25zZV90eXBlIjoiY29kZSBpZF90b2tlbiIsInJlZGlyZWN0X3VyaSI6Imh0dHBzOi8vZXhhbXBsZS5vcmciLCJub25jZSI6IjEyMyIsImNsaWVudF9pZCI6IlM2SGtzWmZQck1OUE1UaDZWcmhjb3BmWG9MUWEiLCJpYXQiOjE1NTgzODI3NjgsImV4cCI6MTU1ODM4NjM2OCwiYXVkIjoiaHR0cHM6Ly90cHBvcGVuYmFua2luZy5jdW1iZXJsYW5kLmNvLnVrL3Rva2VuIiwiaXNzIjoiUzZIa3NaZlByTU5QTVRoNlZyaGNvcGZYb0xRYSJ9.Zb338OajFm0AKrqGtFmqtS81_n-iJ3RMj0pO3_BdcAbryrpxbZoyH1wT4JQpo91j_Cskhdrb68Rq3MLNhXHkipGD_7uorqZjNeCzvy9hctbhmGt7UCC65aTVeVDejopA3YD1xJmjZBgiYgphNV4W9ELATKrdhFoUTcYdxxmyWGxo9aoIgHMluukAfAlPpAk5HqeQmkCqmEUQhxmUkUouhFYKcSpNHwkBO2M4B37LWn5xFx6TtVjdk2tIOcQQsP7TDzKc06ge-FScugYbELMAtWWzl3sSyvZHW5kMLc9ctw2yqpXzzJWqI1o8dF20uxUUZ6LgZsgnZArz4CxriI3CuA 
+2019-05-21 05:07:02 ERROR STEP: GET_ACCOUNTS: 
+	Unexpected token < in JSON at position 0
+
+Previous Response: <ams:fault xmlns:ams="http://wso2.org/apimanager/security"><ams:code>900901</ams:code><ams:message>Invalid Credentials</ams:message><ams:description>Access failure for API: /open-banking/v3.1/aisp, version: v3.1 status: (900901) - Invalid Credentials. Make sure you have given the correct access token</ams:description></ams:fault> 
+2019-05-21 05:08:13 INFO  _____________MONITORING_START____________ 
+2019-05-21 05:08:13 INFO  ________________CYCLE_START_______________ 
+2019-05-21 05:08:18 ERROR STEP: GET_ACCESS_CODE: 
+	Cannot read property 'focus' of null
+
+Previous Response: https://openbanking.cumberland.co.uk/oauth2/authorize?response_type=code%20id_token&client_id=S6HksZfPrMNPMTh6VrhcopfXoLQa&scope=openid%20accounts&redirect_uri=https://example.org&request=eyJhbGciOiJQUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjZaZ29CVTNOZWhWdk1uQjlzenlzaHVDSlFUOCJ9.eyJtYXhfYWdlIjo4NjQwMCwic2NvcGUiOiJvcGVuaWQgYWNjb3VudHMiLCJjbGFpbXMiOnsiaWRfdG9rZW4iOnsiYWNyIjp7InZhbHVlcyI6WyJ1cm46b3BlbmJhbmtpbmc6cHNkMjpzY2EiLCJ1cm46b3BlbmJhbmtpbmc6cHNkMjpjYSJdLCJlc3NlbnRpYWwiOnRydWV9LCJvcGVuYmFua2luZ19pbnRlbnRfaWQiOnsidmFsdWUiOiIxMDY4MjVkNC1hYTQ0LTRjY2YtOTY5OS0zMGUxY2FkYzNiNGEiLCJlc3NlbnRpYWwiOnRydWV9fSwidXNlcmluZm8iOnsib3BlbmJhbmtpbmdfaW50ZW50X2lkIjp7InZhbHVlIjoiMTA2ODI1ZDQtYWE0NC00Y2NmLTk2OTktMzBlMWNhZGMzYjRhIiwiZXNzZW50aWFsIjp0cnVlfX19LCJyZXNwb25zZV90eXBlIjoiY29kZSBpZF90b2tlbiIsInJlZGlyZWN0X3VyaSI6Imh0dHBzOi8vZXhhbXBsZS5vcmciLCJub25jZSI6IjEyMyIsImNsaWVudF9pZCI6IlM2SGtzWmZQck1OUE1UaDZWcmhjb3BmWG9MUWEiLCJpYXQiOjE1NTgzODI3NjgsImV4cCI6MTU1ODM4NjM2OCwiYXVkIjoiaHR0cHM6Ly90cHBvcGVuYmFua2luZy5jdW1iZXJsYW5kLmNvLnVrL3Rva2VuIiwiaXNzIjoiUzZIa3NaZlByTU5QTVRoNlZyaGNvcGZYb0xRYSJ9.Zb338OajFm0AKrqGtFmqtS81_n-iJ3RMj0pO3_BdcAbryrpxbZoyH1wT4JQpo91j_Cskhdrb68Rq3MLNhXHkipGD_7uorqZjNeCzvy9hctbhmGt7UCC65aTVeVDejopA3YD1xJmjZBgiYgphNV4W9ELATKrdhFoUTcYdxxmyWGxo9aoIgHMluukAfAlPpAk5HqeQmkCqmEUQhxmUkUouhFYKcSpNHwkBO2M4B37LWn5xFx6TtVjdk2tIOcQQsP7TDzKc06ge-FScugYbELMAtWWzl3sSyvZHW5kMLc9ctw2yqpXzzJWqI1o8dF20uxUUZ6LgZsgnZArz4CxriI3CuA 
+2019-05-21 05:08:24 ERROR STEP: GET_ACCOUNTS: 
+	Unexpected token < in JSON at position 0
+
+Previous Response: <ams:fault xmlns:ams="http://wso2.org/apimanager/security"><ams:code>900901</ams:code><ams:message>Invalid Credentials</ams:message><ams:description>Access failure for API: /open-banking/v3.1/aisp, version: v3.1 status: (900901) - Invalid Credentials. Make sure you have given the correct access token</ams:description></ams:fault> 
+2019-05-21 05:12:00 INFO  _____________MONITORING_START____________ 
+2019-05-21 05:12:00 INFO  ________________CYCLE_START_______________ 
+2019-05-21 05:12:04 ERROR STEP: GET_FIRST_ACCESS_TOKEN: 
+	retFirstAccessToken is not defined
+
+Previous Response: [object Object] 
+2019-05-21 05:12:04 ERROR STEP: GET_ACCESS_CODE: 
+	goto: `url` must be a non-empty string
+
+Previous Response:  
+2019-05-21 05:12:09 ERROR STEP: GET_ACCOUNTS: 
+	Unexpected token < in JSON at position 0
+
+Previous Response: <ams:fault xmlns:ams="http://wso2.org/apimanager/security"><ams:code>900901</ams:code><ams:message>Invalid Credentials</ams:message><ams:description>Access failure for API: /open-banking/v3.1/aisp, version: v3.1 status: (900901) - Invalid Credentials. Make sure you have given the correct access token</ams:description></ams:fault> 
+2019-05-21 05:13:59 INFO  _____________MONITORING_START____________ 
+2019-05-21 05:13:59 INFO  ________________CYCLE_START_______________ 
+2019-05-21 05:14:03 ERROR STEP: GET_FIRST_ACCESS_TOKEN: 
+	Unexpected token G in JSON at position 0
+
+Previous Response: {"access_token":"b6a2e6a0-e645-3111-8b86-19128fd474a2","scope":"accounts openid","id_token":"eyJ4NXQiOiJaR000WWpjeFpEVmpOak5rWlRRNE5qWXpZVGhrTWpJMU9EaGhNVGd3TVRnNU9UazRPV05tT0EiLCJraWQiOiJaR000WWpjeFpEVmpOak5rWlRRNE5qWXpZVGhrTWpJMU9EaGhNVGd3TVRnNU9UazRPV05tT0EiLCJhbGciOiJQUzI1NiJ9.eyJhdF9oYXNoIjoicmk0QXF0Sy1RWk9TaEhLZDRXYzRJQSIsImF1ZCI6WyJTNkhrc1pmUHJNTlBNVGg2VnJoY29wZlhvTFFhIiwiaHR0cDpcL1wvb3JnLndzbzIuYXBpbWd0XC9nYXRld2F5Il0sInN1YiI6ImFkbWluQHdzbzIuY29tQGNhcmJvbi5zdXBlciIsIm5iZiI6MTU1ODM4Njg2NiwiYXpwIjoiUzZIa3NaZlByTU5QTVRoNlZyaGNvcGZYb0xRYSIsImFtciI6WyJjbGllbnRfY3JlZGVudGlhbHMiXSwic2NvcGUiOlsiYWNjb3VudHMiLCJvcGVuaWQiXSwiaXNzIjoiaHR0cHM6XC9cL3RwcG9wZW5iYW5raW5nLmN1bWJlcmxhbmQuY28udWtcL3Rva2VuIiwiZXhwIjoxNTU4MzkwNDY2LCJpYXQiOjE1NTgzODY4NjZ9.LoKyM_YncNUUBsPIC7jPY_zAMCXdbbsqmOeLG4lsQlTyyblVNvVNLDiAMeaP4GazI-LPBfp2QKGWl4LhxzdvhIQhqIqOD_H5Vjl2NDKft764-LAmIZJON1EO5sri3YAOMIVa5NAeLv9MIQYFewrhRRLCzmbdTyHHqUP-bgbeypOhmhNp4ChYZ-9U0zAep4rIR6rHnGI69XIfjuDHQlW6Yr8dmzZTNVWp8ZP04ck9QIZXVMc3Uql5X5Fe7c_a6pbW2JXePasUjfl2ZuCAdDnOz1hlKG5htLv0Z07ciyqr8KjuZQC_ThLAIcdkrpJDAL7W3xgEvkvHodxLAN1WZ6oZ1g","token_type":"Bearer","expires_in":3600} 
+2019-05-21 05:14:03 ERROR STEP: GET_ACCESS_CODE: 
+	goto: `url` must be a non-empty string
+
+Previous Response:  
+2019-05-21 05:14:08 ERROR STEP: GET_ACCOUNTS: 
+	Unexpected token < in JSON at position 0
+
+Previous Response: <ams:fault xmlns:ams="http://wso2.org/apimanager/security"><ams:code>900901</ams:code><ams:message>Invalid Credentials</ams:message><ams:description>Access failure for API: /open-banking/v3.1/aisp, version: v3.1 status: (900901) - Invalid Credentials. Make sure you have given the correct access token</ams:description></ams:fault> 
+2019-05-21 05:15:15 INFO  _____________MONITORING_START____________ 
+2019-05-21 05:15:15 INFO  ________________CYCLE_START_______________ 
+2019-05-21 05:15:18 INFO  [GET_FIRST_ACCESS_TOKEN]: 81eee9b9-2cd2-3db3-9159-c2d10a704607 
+2019-05-21 05:15:21 ERROR STEP: GET_ACCOUNT_ACCESS_CONSENT: 
+	retConsents is not defined
+
+Previous Response: {"Data":{"ConsentId":"d624c7df-923c-4277-855d-0a1dd522bf04","Status":"AwaitingAuthorisation","CreationDateTime":"2019-05-20T21:15Z","Permissions":["ReadAccountsBasic","ReadAccountsDetail","ReadBalances","ReadBeneficiariesDetail","ReadDirectDebits","ReadProducts","ReadStandingOrdersDetail","ReadStatementsBasic","ReadStatementsDetail","ReadTransactionsCredits","ReadTransactionsDebits","ReadTransactionsDetail","ReadOffers","ReadPAN","ReadParty","ReadPartyPSU","ReadScheduledPaymentsBasic","ReadScheduledPaymentsDetail","ReadStatementsDetail"],"ExpirationDateTime":"2019-06-20T00:00Z","TransactionFromDateTime":"2018-12-22T00:00Z","TransactionToDateTime":"2019-05-22T00:00Z","StatusUpdateDateTime":"2019-05-20T21:15Z"},"Risk":{},"Links":{"Self":"https://am.openbank.com:8243/open-banking/v3.0/aisp/account-access-consents/d624c7df-923c-4277-855d-0a1dd522bf04"},"Meta":{"TotalPages":1}} 
+2019-05-21 05:15:22 ERROR STEP: GET_ACCESS_CODE: 
+	goto: `url` must be a non-empty string
+
+Previous Response:  
+2019-05-21 05:15:26 ERROR STEP: GET_ACCOUNTS: 
+	Unexpected token < in JSON at position 0
+
+Previous Response: <ams:fault xmlns:ams="http://wso2.org/apimanager/security"><ams:code>900901</ams:code><ams:message>Invalid Credentials</ams:message><ams:description>Access failure for API: /open-banking/v3.1/aisp, version: v3.1 status: (900901) - Invalid Credentials. Make sure you have given the correct access token</ams:description></ams:fault> 
+2019-05-21 05:16:09 INFO  _____________MONITORING_START____________ 
+2019-05-21 05:16:09 INFO  ________________CYCLE_START_______________ 
+2019-05-21 05:16:12 INFO  [GET_FIRST_ACCESS_TOKEN]: c0a8f8c0-5cb4-38f9-9745-a722c8e7098f 
+2019-05-21 05:16:14 INFO  [GET_ACCOUNT_CODE]: 7b3553cc-5600-4a87-beb9-42a64c490404 
+2019-05-21 05:16:14 INFO  [AUTHORIZATION_ENDPOINT]: https://openbanking.cumberland.co.uk/oauth2/authorize?response_type=code%20id_token&client_id=S6HksZfPrMNPMTh6VrhcopfXoLQa&scope=openid%20accounts&redirect_uri=https://example.org&request=eyJhbGciOiJQUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjZaZ29CVTNOZWhWdk1uQjlzenlzaHVDSlFUOCJ9.eyJtYXhfYWdlIjo4NjQwMCwic2NvcGUiOiJvcGVuaWQgYWNjb3VudHMiLCJjbGFpbXMiOnsiaWRfdG9rZW4iOnsiYWNyIjp7InZhbHVlcyI6WyJ1cm46b3BlbmJhbmtpbmc6cHNkMjpzY2EiLCJ1cm46b3BlbmJhbmtpbmc6cHNkMjpjYSJdLCJlc3NlbnRpYWwiOnRydWV9LCJvcGVuYmFua2luZ19pbnRlbnRfaWQiOnsidmFsdWUiOiI3YjM1NTNjYy01NjAwLTRhODctYmViOS00MmE2NGM0OTA0MDQiLCJlc3NlbnRpYWwiOnRydWV9fSwidXNlcmluZm8iOnsib3BlbmJhbmtpbmdfaW50ZW50X2lkIjp7InZhbHVlIjoiN2IzNTUzY2MtNTYwMC00YTg3LWJlYjktNDJhNjRjNDkwNDA0IiwiZXNzZW50aWFsIjp0cnVlfX19LCJyZXNwb25zZV90eXBlIjoiY29kZSBpZF90b2tlbiIsInJlZGlyZWN0X3VyaSI6Imh0dHBzOi8vZXhhbXBsZS5vcmciLCJub25jZSI6IjEyMyIsImNsaWVudF9pZCI6IlM2SGtzWmZQck1OUE1UaDZWcmhjb3BmWG9MUWEiLCJpYXQiOjE1NTgzODY5NzQsImV4cCI6MTU1ODM5MDU3NCwiYXVkIjoiaHR0cHM6Ly90cHBvcGVuYmFua2luZy5jdW1iZXJsYW5kLmNvLnVrL3Rva2VuIiwiaXNzIjoiUzZIa3NaZlByTU5QTVRoNlZyaGNvcGZYb0xRYSJ9.UYpz87OS04IbYzee5_w4lnz8ndDaTZAkPL-KTmido-1wfi41sRpq1MQwteICbKCxhQdTQ16pZLJ22Qk64e70Wzza7lxLoDhH7gurkEZU6J79Y1Y43L7us6XhfRIzxM-_70ugKlMhAc-QxyQT2PJridV4O2EZTVQlSvaIN-7wdPciF-Rzf7EJ7VT4V3Pf84JtDGSy8kdlMr3oYLNEUWJBxW8_d61vwCLBJqlYF9Zqljbzu4YagRJsJ8XL2x08asLAfPfpi9nDhIudtFmKe0eD6gzCrzP-1_4rqfJQi_ZHhC4wLzNcoIQ2UfwI_hCUTzmm3CMJ52mXOQYnNYBtRA1QCA
+ 
+2019-05-21 05:16:33 INFO  [GET_ACCESS_CODE]: a95fcc90-8b4c-34dc-b080-0f79f0ab2f1a 
+2019-05-21 05:16:36 INFO  [GET_ACCESS_TOKEN]: 858113fa-89c7-384e-b253-76a04b6a7cbc 
+2019-05-21 05:16:38 ERROR STEP: GET_ACCOUNT[0]_INFO: 
+	account is not defined
+
+Previous Response: {"Data":{"Account":[{"AccountId":"_uHhMROQPty6S284ksR_lg","Currency":"GBP","AccountType":"Personal","AccountSubType":"CurrentAccount","Description":"Current Account","Nickname":"My Current Account","Account":[{"SchemeName":"UK.OBIE.SortCodeAccountNumber","Identification":"03090103498000"}]},{"AccountId":"FfcVacReo4JeilKxgWKdoA","Currency":"GBP","AccountType":"Business","AccountSubType":"CurrentAccount","Description":"Current Account","Nickname":"Business Current Account","Account":[{"SchemeName":"UK.OBIE.SortCodeAccountNumber","Identification":"03090303498002"}]}]},"Links":{"Self":"https://tppopenbanking.cumberland.co.uk/open-banking/v3.1/aisp/accounts"}} 
+2019-05-21 05:29:46 INFO  ________________CYCLE_START_______________ 
+2019-05-21 05:29:51 INFO  [GET_FIRST_ACCESS_TOKEN]: b5dce41c-67b3-36a7-bf71-891771994f90 
+2019-05-21 05:29:54 INFO  [GET_ACCOUNT_CODE]: c23b1adc-0bb1-46aa-8968-966d0555efa0 
+2019-05-21 05:29:54 INFO  [AUTHORIZATION_ENDPOINT]: https://openbanking.cumberland.co.uk/oauth2/authorize?response_type=code%20id_token&client_id=S6HksZfPrMNPMTh6VrhcopfXoLQa&scope=openid%20accounts&redirect_uri=https://example.org&request=eyJhbGciOiJQUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjZaZ29CVTNOZWhWdk1uQjlzenlzaHVDSlFUOCJ9.eyJtYXhfYWdlIjo4NjQwMCwic2NvcGUiOiJvcGVuaWQgYWNjb3VudHMiLCJjbGFpbXMiOnsiaWRfdG9rZW4iOnsiYWNyIjp7InZhbHVlcyI6WyJ1cm46b3BlbmJhbmtpbmc6cHNkMjpzY2EiLCJ1cm46b3BlbmJhbmtpbmc6cHNkMjpjYSJdLCJlc3NlbnRpYWwiOnRydWV9LCJvcGVuYmFua2luZ19pbnRlbnRfaWQiOnsidmFsdWUiOiJjMjNiMWFkYy0wYmIxLTQ2YWEtODk2OC05NjZkMDU1NWVmYTAiLCJlc3NlbnRpYWwiOnRydWV9fSwidXNlcmluZm8iOnsib3BlbmJhbmtpbmdfaW50ZW50X2lkIjp7InZhbHVlIjoiYzIzYjFhZGMtMGJiMS00NmFhLTg5NjgtOTY2ZDA1NTVlZmEwIiwiZXNzZW50aWFsIjp0cnVlfX19LCJyZXNwb25zZV90eXBlIjoiY29kZSBpZF90b2tlbiIsInJlZGlyZWN0X3VyaSI6Imh0dHBzOi8vZXhhbXBsZS5vcmciLCJub25jZSI6IjEyMyIsImNsaWVudF9pZCI6IlM2SGtzWmZQck1OUE1UaDZWcmhjb3BmWG9MUWEiLCJpYXQiOjE1NTgzODc3OTQsImV4cCI6MTU1ODM5MTM5NCwiYXVkIjoiaHR0cHM6Ly90cHBvcGVuYmFua2luZy5jdW1iZXJsYW5kLmNvLnVrL3Rva2VuIiwiaXNzIjoiUzZIa3NaZlByTU5QTVRoNlZyaGNvcGZYb0xRYSJ9.GTefH1MtNsth9qPDRBs1rVyI4ZQMP3g8r3DGLlafAsl5wqHvCvd8kyIZqbpbJJDbk23ysCnxefkMsfes3RInmRe9Cw_lyIORDf9_t-R_DVO1RT9RdA1U3Y9AG95-88c5OeW5AIkjHK9lb-YzKlxGns2a83oCR4XGzZaDta-72BZfk0f_oZkgtc9ONFo8lsHsoTyR2cvGUV6ue1PjZ0fQ754IVmTiUKRb5zTe22VQXs7nlqDFMgmXY_cdagqv5wZKwRHMr7PzQ_l64JRG0L-3f5P-jLKMBFWuqDs3bof4i609SAMVmic5y4dZIoMfHMGLpQpqUwH-Q9Pdymzw-VjAGg
+ 
+2019-05-21 05:30:13 INFO  [GET_ACCESS_CODE]: 62e84cba-aef0-3978-9c9d-d65c83f2ec6a 
+2019-05-21 05:30:16 INFO  [GET_ACCESS_TOKEN]: 4ea2267d-907f-37dd-85db-ddb68165305a 
+2019-05-21 05:30:39 INFO  ________________CYCLE___END_______________ 
+2019-05-21 05:31:09 INFO  ________________CYCLE_START_______________ 
+2019-05-21 05:31:12 INFO  [GET_FIRST_ACCESS_TOKEN]: 8d8004a0-4017-382a-a2c2-08db4d8c7585 
+2019-05-21 05:31:14 INFO  [GET_ACCOUNT_CODE]: d5512be3-5a94-4a84-8396-194c3b7610c5 
+2019-05-21 05:31:14 INFO  [AUTHORIZATION_ENDPOINT]: https://openbanking.cumberland.co.uk/oauth2/authorize?response_type=code%20id_token&client_id=S6HksZfPrMNPMTh6VrhcopfXoLQa&scope=openid%20accounts&redirect_uri=https://example.org&request=eyJhbGciOiJQUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjZaZ29CVTNOZWhWdk1uQjlzenlzaHVDSlFUOCJ9.eyJtYXhfYWdlIjo4NjQwMCwic2NvcGUiOiJvcGVuaWQgYWNjb3VudHMiLCJjbGFpbXMiOnsiaWRfdG9rZW4iOnsiYWNyIjp7InZhbHVlcyI6WyJ1cm46b3BlbmJhbmtpbmc6cHNkMjpzY2EiLCJ1cm46b3BlbmJhbmtpbmc6cHNkMjpjYSJdLCJlc3NlbnRpYWwiOnRydWV9LCJvcGVuYmFua2luZ19pbnRlbnRfaWQiOnsidmFsdWUiOiJkNTUxMmJlMy01YTk0LTRhODQtODM5Ni0xOTRjM2I3NjEwYzUiLCJlc3NlbnRpYWwiOnRydWV9fSwidXNlcmluZm8iOnsib3BlbmJhbmtpbmdfaW50ZW50X2lkIjp7InZhbHVlIjoiZDU1MTJiZTMtNWE5NC00YTg0LTgzOTYtMTk0YzNiNzYxMGM1IiwiZXNzZW50aWFsIjp0cnVlfX19LCJyZXNwb25zZV90eXBlIjoiY29kZSBpZF90b2tlbiIsInJlZGlyZWN0X3VyaSI6Imh0dHBzOi8vZXhhbXBsZS5vcmciLCJub25jZSI6IjEyMyIsImNsaWVudF9pZCI6IlM2SGtzWmZQck1OUE1UaDZWcmhjb3BmWG9MUWEiLCJpYXQiOjE1NTgzODc4NzQsImV4cCI6MTU1ODM5MTQ3NCwiYXVkIjoiaHR0cHM6Ly90cHBvcGVuYmFua2luZy5jdW1iZXJsYW5kLmNvLnVrL3Rva2VuIiwiaXNzIjoiUzZIa3NaZlByTU5QTVRoNlZyaGNvcGZYb0xRYSJ9.ov8UEkwssJZ8rbXPMkqaO08YIc4zm36XUDJQo_y8XoYou_q-DgVJ-GIOD1FpRzg001CZmiqgm4aIMUGHQu3h-5Fk9XRM_zhIyRv2CwqPp9Vo4HG4q1RwM0cabx6QN7TFxjD88Phz-ivd9qIUF82h79s7nUfEMX-xmrALTvgN42_OY50xNYJDUKVX6gDWN2TFoE14BT3jg4oWGcRMOSthc1AJj2oOkJhjdUairbvaSgCmYwQla28cYBFqTddxBmnS4zPOWRMgArPMb8Ff6wEyPZs60Z4eIpQ9R6BY9WIOJLazhGgqvrirRGiXef6GWWEfDciV8dRH7cKSFhK-QH0wGQ
+ 
+2019-05-21 05:31:32 INFO  [GET_ACCESS_CODE]: 75658394-6f2e-37bc-99bd-f170e5c0bd0b 
+2019-05-21 05:31:35 INFO  [GET_ACCESS_TOKEN]: 13101a19-e2cb-3094-a51d-fc5eb5576199 
+2019-05-21 05:31:58 INFO  ________________CYCLE___END_______________ 
+2019-05-21 05:32:28 INFO  ________________CYCLE_START_______________ 
+2019-05-21 05:32:31 INFO  [GET_FIRST_ACCESS_TOKEN]: 949a620c-3bae-3bdd-9241-75602eb2c839 
+2019-05-21 05:32:33 INFO  [GET_ACCOUNT_CODE]: bdba1eea-fd86-4900-a482-31c481a874ef 
+2019-05-21 05:32:33 INFO  [AUTHORIZATION_ENDPOINT]: https://openbanking.cumberland.co.uk/oauth2/authorize?response_type=code%20id_token&client_id=S6HksZfPrMNPMTh6VrhcopfXoLQa&scope=openid%20accounts&redirect_uri=https://example.org&request=eyJhbGciOiJQUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjZaZ29CVTNOZWhWdk1uQjlzenlzaHVDSlFUOCJ9.eyJtYXhfYWdlIjo4NjQwMCwic2NvcGUiOiJvcGVuaWQgYWNjb3VudHMiLCJjbGFpbXMiOnsiaWRfdG9rZW4iOnsiYWNyIjp7InZhbHVlcyI6WyJ1cm46b3BlbmJhbmtpbmc6cHNkMjpzY2EiLCJ1cm46b3BlbmJhbmtpbmc6cHNkMjpjYSJdLCJlc3NlbnRpYWwiOnRydWV9LCJvcGVuYmFua2luZ19pbnRlbnRfaWQiOnsidmFsdWUiOiJiZGJhMWVlYS1mZDg2LTQ5MDAtYTQ4Mi0zMWM0ODFhODc0ZWYiLCJlc3NlbnRpYWwiOnRydWV9fSwidXNlcmluZm8iOnsib3BlbmJhbmtpbmdfaW50ZW50X2lkIjp7InZhbHVlIjoiYmRiYTFlZWEtZmQ4Ni00OTAwLWE0ODItMzFjNDgxYTg3NGVmIiwiZXNzZW50aWFsIjp0cnVlfX19LCJyZXNwb25zZV90eXBlIjoiY29kZSBpZF90b2tlbiIsInJlZGlyZWN0X3VyaSI6Imh0dHBzOi8vZXhhbXBsZS5vcmciLCJub25jZSI6IjEyMyIsImNsaWVudF9pZCI6IlM2SGtzWmZQck1OUE1UaDZWcmhjb3BmWG9MUWEiLCJpYXQiOjE1NTgzODc5NTMsImV4cCI6MTU1ODM5MTU1MywiYXVkIjoiaHR0cHM6Ly90cHBvcGVuYmFua2luZy5jdW1iZXJsYW5kLmNvLnVrL3Rva2VuIiwiaXNzIjoiUzZIa3NaZlByTU5QTVRoNlZyaGNvcGZYb0xRYSJ9.hUAlC01llZTAgU6cfAUojjdcP7KJSD0M1Nvzs1Cvq8xD53dkIIdwiL42VP2mzeKpbVCdjW0dTGOgBRMp_T_sOrEcyoGb2UrWcV7uyWg3mUOlBd0ueXoMBe5TOUo4LTNJlNeTeHhNa5dnpKJ9_6gFAaveoqjUj9CCE3LdCu71By3gmR3Ib00-rkpBAsKqjWToTF-PPN8QGIzdqoz1wFt4uJc-p9KsiChZ1GXVs2L7K2WubG_788EsjWNZ6C1Faj0e7w8E3vhec1rKM0judVVEv7y8tKM3a7nB4xNw65LzNgDXa-JOAuLJek3t8eAcLhH57YWzQua15EBi04E2jhmuoA
+ 
+2019-05-21 20:43:34 INFO  ________________CYCLE_START_______________ 
+2019-05-21 20:43:41 INFO  [GET_FIRST_ACCESS_TOKEN]: 87950afb-11b6-3fc6-986f-a868fe2a3714 
+2019-05-21 20:43:48 INFO  [GET_ACCOUNT_CODE]: be108d52-9b74-4a4d-bc19-7b1ac1b958d0 
+2019-05-21 20:43:48 INFO  [AUTHORIZATION_ENDPOINT]: https://openbanking.cumberland.co.uk/oauth2/authorize?response_type=code%20id_token&client_id=S6HksZfPrMNPMTh6VrhcopfXoLQa&scope=openid%20accounts&redirect_uri=https://example.org&request=eyJhbGciOiJQUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjZaZ29CVTNOZWhWdk1uQjlzenlzaHVDSlFUOCJ9.eyJtYXhfYWdlIjo4NjQwMCwic2NvcGUiOiJvcGVuaWQgYWNjb3VudHMiLCJjbGFpbXMiOnsiaWRfdG9rZW4iOnsiYWNyIjp7InZhbHVlcyI6WyJ1cm46b3BlbmJhbmtpbmc6cHNkMjpzY2EiLCJ1cm46b3BlbmJhbmtpbmc6cHNkMjpjYSJdLCJlc3NlbnRpYWwiOnRydWV9LCJvcGVuYmFua2luZ19pbnRlbnRfaWQiOnsidmFsdWUiOiJiZTEwOGQ1Mi05Yjc0LTRhNGQtYmMxOS03YjFhYzFiOTU4ZDAiLCJlc3NlbnRpYWwiOnRydWV9fSwidXNlcmluZm8iOnsib3BlbmJhbmtpbmdfaW50ZW50X2lkIjp7InZhbHVlIjoiYmUxMDhkNTItOWI3NC00YTRkLWJjMTktN2IxYWMxYjk1OGQwIiwiZXNzZW50aWFsIjp0cnVlfX19LCJyZXNwb25zZV90eXBlIjoiY29kZSBpZF90b2tlbiIsInJlZGlyZWN0X3VyaSI6Imh0dHBzOi8vZXhhbXBsZS5vcmciLCJub25jZSI6IjEyMyIsImNsaWVudF9pZCI6IlM2SGtzWmZQck1OUE1UaDZWcmhjb3BmWG9MUWEiLCJpYXQiOjE1NTg0NDI2MjgsImV4cCI6MTU1ODQ0NjIyOCwiYXVkIjoiaHR0cHM6Ly90cHBvcGVuYmFua2luZy5jdW1iZXJsYW5kLmNvLnVrL3Rva2VuIiwiaXNzIjoiUzZIa3NaZlByTU5QTVRoNlZyaGNvcGZYb0xRYSJ9.OSD-FdK1OBqWem2BhS_2f6bMjNwJ8cMIUxI8kViFJ-1Um5rHnQu_TcbX_aDWaGTF8W0Wm0sngxwJjhqYx2EQtNYGYpcndMF2LIIyGGSQREsUt91eyaDaW-GN4nFIr_fCD8U93stNv4uxkNt1bi2JIRptVExWYMok2HSSnwbAvB4AkArYVrdrVG3r9_cUMe8UcH8NW9A2rI9WXz1xJtGCbXOr7aIEx-KxtClhus--GQY1WOHEYmvRvf5ArjUG5o6hVupG6LR_AZxr4DzhkkNuO2W28MVd5osBKRS2argOFZyAxG0UwLCg5TiROm_9Iu00FwQiUhWtMKVCjfWp08B7kg
+ 
