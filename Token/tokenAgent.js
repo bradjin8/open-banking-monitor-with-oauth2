@@ -26,7 +26,7 @@ module.exports.getAccessToken = async function () {
         };
 
         let jwt_token = await jwtAgent.getClientAssertion();
-        //console.log(`JWT_RECEIVE: ${jwt_token}`);
+        // console.log(`JWT_RECEIVE: ${jwt_token}`);
         let req = http.request(options, function (res) {
             let chunks = [];
 
@@ -119,9 +119,9 @@ module.exports.getAccountAccessConsents = function (access_token) {
                             'ReadScheduledPaymentsBasic',
                             'ReadScheduledPaymentsDetail',
                             'ReadStatementsDetail'],
-                    ExpirationDateTime: '2019-06-20T00:00:00+00:00',
-                    TransactionFromDateTime: '2018-12-22T00:00:00+00:00',
-                    TransactionToDateTime: '2019-05-22T00:00:00+00:00'
+                    ExpirationDateTime: '2019-07-20T00:00:00+00:00',
+                    TransactionFromDateTime: '2019-01-22T00:00:00+00:00',
+                    TransactionToDateTime: '2019-07-22T00:00:00+00:00'
                 },
             Risk: {}
         }));
@@ -145,7 +145,7 @@ module.exports.getAuthorizeEndpointURL = async function (consent_id) {
         };
 
         //console.log(`PATH: ${options.hostname}${options.path}`);
-        let authorizeURL = `https://${options.hostname}${options.path}`;
+        let authorizeURL = `https://${options.hostname}${options.path}&nonce=123-fgf&state=123-fgf`;
         //openBrowser(authorizeURL);
         resolve(authorizeURL);
     });
@@ -154,7 +154,7 @@ module.exports.getAuthorizeEndpointURL = async function (consent_id) {
 module.exports.getCode = async function (endpoint_url) {
     return new Promise((resolve, reject) => {
         const nm = require('nightmare');
-        const nmAgent = nm({show: true});
+        const nmAgent = nm({show: false, waitTimeout: 60 * 1000});
 
         nmAgent
             .goto(endpoint_url)

@@ -34,6 +34,7 @@ module.exports.getClientAssertion = async function () {
  */
 module.exports.getRequest = async function (consent_id, redirect_uri) {
     return new Promise((resolve => {
+        let date=new Date();
         let payload = {
             max_age: 86400,
             scope: "openid accounts",
@@ -60,7 +61,7 @@ module.exports.getRequest = async function (consent_id, redirect_uri) {
             },
             response_type: "code id_token",
             redirect_uri: redirect_uri,
-            nonce: "123",
+            nonce: ""+date.getFullYear()+(date.getMonth()+1)+date.getDate()+date.getHours()+date.getMinutes()+date.getSeconds()+date.getMilliseconds(),
             client_id: "S6HksZfPrMNPMTh6VrhcopfXoLQa"
         };
 
