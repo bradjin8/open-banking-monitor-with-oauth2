@@ -32,9 +32,8 @@ module.exports.getClientAssertion = async function () {
  * @param consent_id: Account Access Consent Id String
  * @returns {Promise<String>}: JWT String
  */
-module.exports.getRequest = async function (consent_id, redirect_uri) {
+module.exports.getRequest = async function (consent_id, redirect_uri, nonce = "") {
     return new Promise((resolve => {
-        let date=new Date();
         let payload = {
             max_age: 86400,
             scope: "openid accounts",
@@ -61,8 +60,8 @@ module.exports.getRequest = async function (consent_id, redirect_uri) {
             },
             response_type: "code id_token",
             redirect_uri: redirect_uri,
-            nonce: ""+date.getFullYear()+(date.getMonth()+1)+date.getDate()+date.getHours()+date.getMinutes()+date.getSeconds()+date.getMilliseconds(),
-            client_id: "S6HksZfPrMNPMTh6VrhcopfXoLQa"
+            nonce: nonce,
+            client_id: config.client_id
         };
 
         let sOptions = {

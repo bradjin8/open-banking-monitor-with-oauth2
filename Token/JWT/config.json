@@ -1,9 +1,11 @@
 {
   "private_key_file": "./private.key",
   "header_alg": "PS256",
-  "header_kid": "6ZgoBU3NehVvMnB9szyshuCJQT8",
+  "header_kid": "aZ1E0R75vmyHN-ZiMxG72jtXgWk",
+  "header_kid_test": "6ZgoBU3NehVvMnB9szyshuCJQT8",
   "header_type": "JWT",
-  "payload_sub": "S6HksZfPrMNPMTh6VrhcopfXoLQa",
+  "payload_sub": "2nTigdaOUtu9ctvN2HQw5U1ZY8ca",
   "payload_aud": "https://tppopenbanking.cumberland.co.uk/token",
-  "payload_iss": "S6HksZfPrMNPMTh6VrhcopfXoLQa"
+  "payload_iss": "2nTigdaOUtu9ctvN2HQw5U1ZY8ca",
+  "client_id": "2nTigdaOUtu9ctvN2HQw5U1ZY8ca"
 }

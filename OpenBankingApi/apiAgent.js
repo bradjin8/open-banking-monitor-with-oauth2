@@ -24,7 +24,7 @@ module.exports.getAccounts = async function (token, financial_id = "") {
             },
             "key": fs.readFileSync('./SSL/transport.key'),
             "cert": fs.readFileSync('./SSL/transport.pem'),
-            "Pass": "Passw0rd"
+            "Pass": settings.user_password
         };
         let req = http.request(options, function (res) {
             let chunks = [];
@@ -62,7 +62,7 @@ module.exports.getAccountsById = async function (token, account_id, financial_id
             },
             "key": fs.readFileSync('./SSL/transport.key'),
             "cert": fs.readFileSync('./SSL/transport.pem'),
-            "Pass": "Passw0rd"
+            "Pass": settings.user_password
         };
         let req = http.request(options, function (res) {
             let chunks = [];
@@ -100,7 +100,7 @@ module.exports.getBalances = async function (token, account_id, financial_id="")
             },
             "key": fs.readFileSync('./SSL/transport.key'),
             "cert": fs.readFileSync('./SSL/transport.pem'),
-            "Pass": "Passw0rd"
+            "Pass": settings.user_password
         };
         let req = http.request(options, function (res) {
             let chunks = [];
@@ -137,7 +137,7 @@ module.exports.getStatements = async function (token, account_id, financial_id="
             },
             "key": fs.readFileSync('./SSL/transport.key'),
             "cert": fs.readFileSync('./SSL/transport.pem'),
-            "Pass": "Passw0rd"
+            "Pass": settings.user_password
         };
         let req = http.request(options, function (res) {
             let chunks = [];
@@ -174,7 +174,7 @@ module.exports.getTransactions = async function (token, account_id, financial_id
             },
             "key": fs.readFileSync('./SSL/transport.key'),
             "cert": fs.readFileSync('./SSL/transport.pem'),
-            "Pass": "Passw0rd"
+            "Pass": settings.user_password
         };
         let req = http.request(options, function (res) {
             let chunks = [];

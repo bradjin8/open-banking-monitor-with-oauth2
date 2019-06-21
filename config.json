@@ -1,8 +1,9 @@
 {
   "url_token_server": "https://tppopenbanking.cumberland.co.uk/token",
   "financial_id": "001580000103U9kAAE",
-  "client_id": "S6HksZfPrMNPMTh6VrhcopfXoLQa",
+  "client_id": "2nTigdaOUtu9ctvN2HQw5U1ZY8ca",
+  "test_client_id": "S6HksZfPrMNPMTh6VrhcopfXoLQa",
   "redirect_uri": "https://example.org",
   "scope_before_authorize": "openid accounts",
-  "first_access_token": "c3a4857a-fda3-3024-9065-96dd165b076a",
+  "monitoring_interval_min": 15
 }

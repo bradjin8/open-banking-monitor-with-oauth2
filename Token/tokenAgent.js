@@ -22,7 +22,7 @@ module.exports.getAccessToken = async function () {
             },
             "key": fs.readFileSync('./SSL/transport.key'),
             "cert": fs.readFileSync('./SSL/transport.pem'),
-            "Pass": "Passw0rd"
+            "Pass": settings.user_password
         };
 
         let jwt_token = await jwtAgent.getClientAssertion();
@@ -75,7 +75,7 @@ module.exports.getAccountAccessConsents = function (access_token) {
             },
             "key": fs.readFileSync('./SSL/transport.key'),
             "cert": fs.readFileSync('./SSL/transport.pem'),
-            "Pass": "Passw0rd"
+            "Pass": settings.user_password
         };
         let req = http.request(options, function (res) {
             let chunks = [];
@@ -136,7 +136,9 @@ module.exports.getAccountAccessConsents = function (access_token) {
  */
 module.exports.getAuthorizeEndpointURL = async function (consent_id) {
     return new Promise(async (resolve, reject) => {
-        let jwtRequest = await jwtAgent.getRequest(consent_id, settings.redirect_uri);
+        let date=new Date();
+        let nonce = ""+date.getFullYear()+(date.getMonth()+1)+date.getDate()+date.getHours()+date.getMinutes()+date.getSeconds()+date.getMilliseconds();
+        let jwtRequest = await jwtAgent.getRequest(consent_id, settings.redirect_uri, nonce);
 
         let options = {
             "method": "GET",
@@ -145,7 +147,7 @@ module.exports.getAuthorizeEndpointURL = async function (consent_id) {
         };
 
         //console.log(`PATH: ${options.hostname}${options.path}`);
-        let authorizeURL = `https://${options.hostname}${options.path}&nonce=123-fgf&state=123-fgf`;
+        let authorizeURL = `https://${options.hostname}${options.path}&nonce=${nonce}&state=${nonce}`;
         //openBrowser(authorizeURL);
         resolve(authorizeURL);
     });
@@ -154,13 +156,18 @@ module.exports.getAuthorizeEndpointURL = async function (consent_id) {
 module.exports.getCode = async function (endpoint_url) {
     return new Promise((resolve, reject) => {
         const nm = require('nightmare');
-        const nmAgent = nm({show: false, waitTimeout: 60 * 1000});
+        const nmAgent = nm({show: false, waitTimeout: 3 * 60 * 1000});
 
         nmAgent
             .goto(endpoint_url)
             .type('#username', settings.user_name)
             .type('#password', settings.user_password)
             .click('form[action*="/commonauth"] [type=submit]')
+            .wait('#proceed')
+            .click('#proceed')
+            .wait('#authCodeInput')
+            .type('#authCodeInput', settings.user_code)
+            .click('#proceed')
             .wait('#approve')
             .evaluate(() => {
                 let checkboxes = document.querySelectorAll('input[type="checkbox"]#accselect');
@@ -208,7 +215,7 @@ module.exports.getAccessTokenForAPI = async function (code) {
             },
             "key": fs.readFileSync('./SSL/transport.key'),
             "cert": fs.readFileSync('./SSL/transport.pem'),
-            "Pass": "Passw0rd"
+            "Pass": settings.user_password
         };
 
         let req = http.request(options, function (res) {

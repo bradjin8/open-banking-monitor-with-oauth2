@@ -1,5 +1,5 @@
 const tokenAgent = require('./Token/tokenAgent'),
-    dbAgent = require('./Database/dbAgent'),
+    //dbAgent = require('./Database/dbAgent'),
     apiAgent = require('./OpenBankingApi/apiAgent'),
     emailAgent = require('./Report/emailAgent');
 
@@ -9,9 +9,9 @@ const Logger = require('simple-node-logger'),
         timestampFormat: "YYYY-MM-DD HH:mm:ss"
     },
     logAgent = Logger.createSimpleLogger(options);
-
+const config = require('./config');
 const fid = require('./Token/settings').financial_id;
-const monitoring_interval = 30000;
+const monitoring_interval = config.monitoring_interval_min*60*1000;
 
 let status_report = "";
 let status_code = "_____________MONITORING_START_____________";
@@ -46,9 +46,9 @@ async function getNewAuthorizeEndpointURL() {
 
         status_code = `AUTHORIZATION_ENDPOINT`;
         retAuthorizeEndpointURL = await tokenAgent.getAuthorizeEndpointURL(status_report);
-        logAgent.info(`[${status_code}]: ${retAuthorizeEndpointURL}\n`);
+        logAgent.info(`[${status_code}]: ${retAuthorizeEndpointURL}`);
 
-        dbAgent.updateURL(retAuthorizeEndpointURL);
+        //dbAgent.updateURL(retAuthorizeEndpointURL);
     } catch (e) {
         exceptionhandler(e)
     }
@@ -143,7 +143,7 @@ function exceptionhandler(e) {
 }
 
 async function start() {
-    logAgent.info(`________________CYCLE_START_______________`);
+    logAgent.info(`\n________________CYCLE_START_______________`);
     let ret = await monitorAPI();
     // emailAgent.sendEmailViaSg(`<h1>Dear Nick</h1><h4>A monitoring cycle was completed at ${new Date().toLocaleTimeString()}</h4>`);
     logAgent.info(`________________CYCLE___END_______________`);
