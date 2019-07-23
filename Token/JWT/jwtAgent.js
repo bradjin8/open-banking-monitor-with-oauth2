@@ -14,6 +14,7 @@ module.exports.getClientAssertion = async function () {
         let date=new Date();
         let jti = ""+date.getFullYear()+(date.getMonth()+1)+date.getDate()+date.getHours()+date.getMinutes()+date.getSeconds()+date.getMilliseconds();
         let sOptions = {
+            CBSMonitor: true,
             issuer: config.payload_iss,
             subject: config.payload_sub,
             audience: config.payload_aud,

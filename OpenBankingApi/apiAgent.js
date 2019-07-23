@@ -20,7 +20,8 @@ module.exports.getAccounts = async function (token, financial_id = "") {
             "headers": {
                 "Content-Type": "application/x-www-form-urlencoded",
                 "x-fapi-financial-id": fid,
-                "Authorization": `Bearer ${token}`
+                "Authorization": `Bearer ${token}`,
+                "CBSMonitor": true
             },
             "key": fs.readFileSync('./SSL/transport.key'),
             "cert": fs.readFileSync('./SSL/transport.pem'),
@@ -58,7 +59,8 @@ module.exports.getAccountsById = async function (token, account_id, financial_id
             "headers": {
                 "Content-Type": "application/x-www-form-urlencoded",
                 "x-fapi-financial-id": fid,
-                "Authorization": `Bearer ${token}`
+                "Authorization": `Bearer ${token}`,
+                "CBSMonitor": true
             },
             "key": fs.readFileSync('./SSL/transport.key'),
             "cert": fs.readFileSync('./SSL/transport.pem'),
@@ -96,7 +98,8 @@ module.exports.getBalances = async function (token, account_id, financial_id="")
             "headers": {
                 "Content-Type": "application/x-www-form-urlencoded",
                 "x-fapi-financial-id": fid,
-                "Authorization": `Bearer ${token}`
+                "Authorization": `Bearer ${token}`,
+                "CBSMonitor": true
             },
             "key": fs.readFileSync('./SSL/transport.key'),
             "cert": fs.readFileSync('./SSL/transport.pem'),
@@ -133,7 +136,8 @@ module.exports.getStatements = async function (token, account_id, financial_id="
             "headers": {
                 "Content-Type": "application/x-www-form-urlencoded",
                 "x-fapi-financial-id": fid,
-                "Authorization": `Bearer ${token}`
+                "Authorization": `Bearer ${token}`,
+                "CBSMonitor": true
             },
             "key": fs.readFileSync('./SSL/transport.key'),
             "cert": fs.readFileSync('./SSL/transport.pem'),
@@ -170,7 +174,8 @@ module.exports.getTransactions = async function (token, account_id, financial_id
             "headers": {
                 "Content-Type": "application/x-www-form-urlencoded",
                 "x-fapi-financial-id": fid,
-                "Authorization": `Bearer ${token}`
+                "Authorization": `Bearer ${token}`,
+                "CBSMonitor": true
             },
             "key": fs.readFileSync('./SSL/transport.key'),
             "cert": fs.readFileSync('./SSL/transport.pem'),

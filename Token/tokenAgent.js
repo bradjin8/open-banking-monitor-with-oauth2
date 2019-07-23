@@ -19,6 +19,7 @@ module.exports.getAccessToken = async function () {
                 "Content-Type": "application/x-www-form-urlencoded",
                 "x-fapi-financial-id": settings.financial_id,
                 "Accept": "application/json",
+                "CBSMonitor": true
             },
             "key": fs.readFileSync('./SSL/transport.key'),
             "cert": fs.readFileSync('./SSL/transport.pem'),
@@ -71,7 +72,8 @@ module.exports.getAccountAccessConsents = function (access_token) {
                 "Content-Type": "application/json",
                 "x-fapi-financial-id": settings.financial_id,
                 "Accept": "application/json",
-                "Authorization": `Bearer ${access_token}`
+                "Authorization": `Bearer ${access_token}`,
+                "CBSMonitor": true
             },
             "key": fs.readFileSync('./SSL/transport.key'),
             "cert": fs.readFileSync('./SSL/transport.pem'),
@@ -119,8 +121,8 @@ module.exports.getAccountAccessConsents = function (access_token) {
                             'ReadScheduledPaymentsBasic',
                             'ReadScheduledPaymentsDetail',
                             'ReadStatementsDetail'],
-                    ExpirationDateTime: '2019-07-20T00:00:00+00:00',
-                    TransactionFromDateTime: '2019-01-22T00:00:00+00:00',
+                    ExpirationDateTime: '2019-08-16T00:00:00+00:00',
+                    TransactionFromDateTime: '2019-06-22T00:00:00+00:00',
                     TransactionToDateTime: '2019-07-22T00:00:00+00:00'
                 },
             Risk: {}
@@ -211,7 +213,8 @@ module.exports.getAccessTokenForAPI = async function (code) {
             "headers": {
                 "Content-Type": "application/x-www-form-urlencoded",
                 "x-fapi-financial-id": settings.financial_id,
-                "Accept": "application/json"
+                "Accept": "application/json",
+                "CBSMonitor": true
             },
             "key": fs.readFileSync('./SSL/transport.key'),
             "cert": fs.readFileSync('./SSL/transport.pem'),
