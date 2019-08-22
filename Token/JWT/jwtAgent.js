@@ -7,12 +7,11 @@ const config = require('./config.json');
  * Get Client Assertion
  * @returns {Promise<String>}: JWT String
  */
-module.exports.getClientAssertion = async function () {
+module.exports.getClientAssertion = async () => {
     return new Promise(resolve => {
-        let payload = {
-        };
-        let date=new Date();
-        let jti = ""+date.getFullYear()+(date.getMonth()+1)+date.getDate()+date.getHours()+date.getMinutes()+date.getSeconds()+date.getMilliseconds();
+        let payload = {};
+        let date = new Date();
+        let jti = "" + date.getFullYear() + (date.getMonth() + 1) + date.getDate() + date.getHours() + date.getMinutes() + date.getSeconds() + date.getMilliseconds();
         let sOptions = {
             CBSMonitor: true,
             issuer: config.payload_iss,
@@ -33,7 +32,7 @@ module.exports.getClientAssertion = async function () {
  * @param consent_id: Account Access Consent Id String
  * @returns {Promise<String>}: JWT String
  */
-module.exports.getRequest = async function (consent_id, redirect_uri, nonce = "") {
+module.exports.getRequest = async (consent_id, redirect_uri, nonce = "") => {
     return new Promise((resolve => {
         let payload = {
             max_age: 86400,

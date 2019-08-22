@@ -11,7 +11,7 @@ const Logger = require('simple-node-logger'),
     logAgent = Logger.createSimpleLogger(options);
 const config = require('./config');
 const fid = require('./Token/settings').financial_id;
-const monitoring_interval = config.monitoring_interval_min*60*1000;
+const monitoring_interval = config.monitoring_interval_min * 60 * 1000;
 
 let status_report = "";
 let status_code = "_____________MONITORING_START_____________";

@@ -9,7 +9,7 @@ const openBrowser = require('opn');
  * Get First Access Token
  * @returns {Promise<String>} Response JSON/HTML String
  */
-module.exports.getAccessToken = async function () {
+module.exports.getAccessToken = async () => {
     return new Promise(async (resolve, reject) => {
         let options = {
             "method": "POST",
@@ -62,7 +62,7 @@ module.exports.getAccessToken = async function () {
  * @param access_token: First Access Token String
  * @returns {Promise<String>}: Response JSON/HTML String
  */
-module.exports.getAccountAccessConsents = function (access_token) {
+module.exports.getAccountAccessConsents = (access_token) => {
     return new Promise(async (resolve, reject) => {
         let options = {
             "method": "POST",
@@ -121,7 +121,7 @@ module.exports.getAccountAccessConsents = function (access_token) {
                             'ReadScheduledPaymentsBasic',
                             'ReadScheduledPaymentsDetail',
                             'ReadStatementsDetail'],
-                    ExpirationDateTime: '2019-08-16T00:00:00+00:00',
+                    ExpirationDateTime: '2019-09-16T00:00:00+00:00',
                     TransactionFromDateTime: '2019-06-22T00:00:00+00:00',
                     TransactionToDateTime: '2019-07-22T00:00:00+00:00'
                 },
@@ -136,10 +136,10 @@ module.exports.getAccountAccessConsents = function (access_token) {
  * @param consent_id: account access consent id
  * @returns {Promise<String>}: Authorize Endpoint URL String
  */
-module.exports.getAuthorizeEndpointURL = async function (consent_id) {
+module.exports.getAuthorizeEndpointURL = async (consent_id) => {
     return new Promise(async (resolve, reject) => {
-        let date=new Date();
-        let nonce = ""+date.getFullYear()+(date.getMonth()+1)+date.getDate()+date.getHours()+date.getMinutes()+date.getSeconds()+date.getMilliseconds();
+        let date = new Date();
+        let nonce = "" + date.getFullYear() + (date.getMonth() + 1) + date.getDate() + date.getHours() + date.getMinutes() + date.getSeconds() + date.getMilliseconds();
         let jwtRequest = await jwtAgent.getRequest(consent_id, settings.redirect_uri, nonce);
 
         let options = {
@@ -155,7 +155,7 @@ module.exports.getAuthorizeEndpointURL = async function (consent_id) {
     });
 };
 
-module.exports.getCode = async function (endpoint_url) {
+module.exports.getCode = async (endpoint_url) => {
     return new Promise((resolve, reject) => {
         const nm = require('nightmare');
         const nmAgent = nm({show: false, waitTimeout: 3 * 60 * 1000});
@@ -202,7 +202,7 @@ module.exports.getCode = async function (endpoint_url) {
  * @param code: Code from Redirected URL
  * @returns {Promise<String>}: Response JSON/HTML String
  */
-module.exports.getAccessTokenForAPI = async function (code) {
+module.exports.getAccessTokenForAPI = async (code) => {
     return new Promise(async (resolve, reject) => {
         let jwtClientAssertion = await jwtAgent.getClientAssertion();
 
