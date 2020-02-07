@@ -37,7 +37,7 @@ module.exports.getRequest = async function (consent_id, redirect_uri, nonce = ""
     return new Promise((resolve => {
         let payload = {
             max_age: 86400,
-            scope: "openid accounts",
+            scope: `openid accounts`,// OB_ACCOUNT_CONSENT:${consent_id} openid`,
             claims: {
                 id_token: {
                     acr: {

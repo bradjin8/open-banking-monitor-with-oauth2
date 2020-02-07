@@ -88,7 +88,7 @@ module.exports.getAccountAccessConsents = function (access_token) {
 
             res.on("end", function () {
                 let body = Buffer.concat(chunks);
-                //console.log(`${body.toString()}`);
+                console.log(`${body.toString()}`);
                 resolve(body.toString());
             });
 
@@ -121,9 +121,9 @@ module.exports.getAccountAccessConsents = function (access_token) {
                             'ReadScheduledPaymentsBasic',
                             'ReadScheduledPaymentsDetail',
                             'ReadStatementsDetail'],
-                    ExpirationDateTime: '2019-08-16T00:00:00+00:00',
-                    TransactionFromDateTime: '2019-06-22T00:00:00+00:00',
-                    TransactionToDateTime: '2019-07-22T00:00:00+00:00'
+                    ExpirationDateTime: '2020-02-20T00:00:00+00:00',
+                    TransactionFromDateTime: '2019-12-22T00:00:00+00:00',
+                    TransactionToDateTime: '2020-01-01T00:00:00+00:00'
                 },
             Risk: {}
         }));
@@ -155,10 +155,10 @@ module.exports.getAuthorizeEndpointURL = async function (consent_id) {
     });
 };
 
-module.exports.getCode = async function (endpoint_url) {
+module.exports.getCode = async function (endpoint_url, access_code) {
     return new Promise((resolve, reject) => {
         const nm = require('nightmare');
-        const nmAgent = nm({show: false, waitTimeout: 3 * 60 * 1000});
+        const nmAgent = nm({show: true, waitTimeout: 3 * 60 * 1000});
 
         nmAgent
             .goto(endpoint_url)
