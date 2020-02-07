@@ -10,7 +10,7 @@ const default_financial_id = "001580000103U9kAAE";
  * @param financial_id: String, x-fapi-financial-id
  * @returns {Promise<String>}: Response
  */
-module.exports.getAccounts = async function (token, financial_id = "") {
+module.exports.getAccounts = async (token, financial_id = "") => {
     let fid = financial_id.length > 0 ? financial_id : default_financial_id;
     return new Promise((resolve, reject) => {
         let options = {
@@ -49,9 +49,9 @@ module.exports.getAccounts = async function (token, financial_id = "") {
     });
 };
 
-module.exports.getAccountsById = async function (token, account_id, financial_id="") {
-    let fid = financial_id.length?financial_id:default_financial_id;
-    return new Promise((resolve, reject)=>{
+module.exports.getAccountsById = async (token, account_id, financial_id = "") => {
+    let fid = financial_id.length ? financial_id : default_financial_id;
+    return new Promise((resolve, reject) => {
         let options = {
             "method": "GET",
             "hostname": settings.hostname,
@@ -88,9 +88,9 @@ module.exports.getAccountsById = async function (token, account_id, financial_id
     });
 };
 
-module.exports.getBalances = async function (token, account_id, financial_id="") {
-    let fid = financial_id.length?financial_id:default_financial_id;
-    return new Promise((resolve, reject)=>{
+module.exports.getBalances = async (token, account_id, financial_id = "") => {
+    let fid = financial_id.length ? financial_id : default_financial_id;
+    return new Promise((resolve, reject) => {
         let options = {
             "method": "GET",
             "hostname": settings.hostname,
@@ -126,9 +126,9 @@ module.exports.getBalances = async function (token, account_id, financial_id="")
         req.end();
     });
 };
-module.exports.getStatements = async function (token, account_id, financial_id="") {
-    let fid = financial_id.length?financial_id:default_financial_id;
-    return new Promise((resolve, reject)=>{
+module.exports.getStatements = async (token, account_id, financial_id = "") => {
+    let fid = financial_id.length ? financial_id : default_financial_id;
+    return new Promise((resolve, reject) => {
         let options = {
             "method": "GET",
             "hostname": settings.hostname,
@@ -164,9 +164,9 @@ module.exports.getStatements = async function (token, account_id, financial_id="
         req.end();
     });
 };
-module.exports.getTransactions = async function (token, account_id, financial_id="") {
-    let fid = financial_id.length?financial_id:default_financial_id;
-    return new Promise((resolve, reject)=>{
+module.exports.getTransactions = async (token, account_id, financial_id = "") => {
+    let fid = financial_id.length ? financial_id : default_financial_id;
+    return new Promise((resolve, reject) => {
         let options = {
             "method": "GET",
             "hostname": settings.hostname,

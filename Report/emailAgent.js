@@ -59,7 +59,7 @@ module.exports.sendEmail = async (html) => {
     });
 };
 
-module.exports.sendEmailViaSg = async function (html) {
+module.exports.sendEmailViaSg = async (html) => {
     return new Promise(async (resolve, reject) => {
         sgMail.setApiKey(settings.smtp_server_apikey);
         const msg = {
