@@ -15,7 +15,7 @@
     "file-system": "^2.2.2",
     "fs": "0.0.1-security",
     "nightmare": "^3.0.2",
-    "nodemailer": "^6.1.1",
+    "nodemailer": "^6.4.16",
     "opn": "^6.0.0",
     "qs": "^6.7.0",
     "sendmail": "^1.4.1",
