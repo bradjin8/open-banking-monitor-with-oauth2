@@ -17,7 +17,7 @@
     "nightmare": "^3.0.2",
     "nodemailer": "^6.4.16",
     "opn": "^6.0.0",
-    "qs": "^6.7.0",
+    "qs": "^6.7.3",
     "sendmail": "^1.4.1",
     "simple-node-logger": "^18.12.22",
     "sqlite3": "^4.0.8"
